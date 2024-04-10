@@ -14,6 +14,8 @@
 	<integer>1</integer>
 	<key>Command</key>
 	<string></string>
+	<key>CommandSelection</key>
+	<true/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Afterglow</key>
@@ -508,7 +510,7 @@
 				<real>0.67450982329999998</real>
 			</dict>
 			<key>BM Growl</key>
-			<true/>
+			<false/>
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -598,7 +600,7 @@
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<true/>
+			<false/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1080,6 +1082,8 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>Monaco 14</string>
+			<key>Open Password Manager Automatically</key>
+			<true/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1117,7 +1121,7 @@
 				<key>editor</key>
 				<string>com.github.atom</string>
 				<key>text</key>
-				<string>/usr/local/bin/code-fb-insiders -g \1:\2
+				<string>/usr/local/bin/code-fb -g \1:\2
 /usr/local/bin/code-fb -g \1:\2
 </string>
 			</dict>
@@ -1132,7 +1136,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<true/>
+			<false/>
 			<key>Smart Selection Rules</key>
 			<array>
 				<dict>
@@ -1273,11 +1277,11 @@
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
-			<true/>
+			<false/>
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/christinewang</string>
+			<string>/home/christinewang/fbsource/fbcode</string>
 		</dict>
 		<dict>
 			<key>ASCII Anti Aliased</key>
@@ -1429,7 +1433,7 @@
 				<real>0.67450982329999998</real>
 			</dict>
 			<key>BM Growl</key>
-			<true/>
+			<false/>
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1513,15 +1517,17 @@
 			<key>Custom Command</key>
 			<string>Yes</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
 			<string>Default</string>
+			<key>Disable Printing</key>
+			<true/>
 			<key>Disable Window Resizing</key>
 			<true/>
 			<key>Flashing Bell</key>
-			<true/>
+			<false/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -2042,7 +2048,7 @@
 				<key>editor</key>
 				<string>com.github.atom</string>
 				<key>text</key>
-				<string>/usr/local/bin/code-fb-insiders -g \1:\2
+				<string>/usr/local/bin/code-fb -g \1:\2
 /usr/local/bin/code-fb -g \1:\2
 </string>
 			</dict>
@@ -2057,7 +2063,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<true/>
+			<false/>
 			<key>Smart Selection Rules</key>
 			<array>
 				<dict>
@@ -2155,6 +2161,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Title Components</key>
+			<integer>64</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
@@ -2198,18 +2206,22 @@
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
-			<true/>
+			<false/>
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/christinewang</string>
+			<string>/home/christinewang/fbsource/fbcode</string>
 		</dict>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
+	<key>OpenBookmark</key>
+	<true/>
 	<key>OpenNoWindowsAtStartup</key>
+	<false/>
+	<key>OpenTmuxDashboardIfHiddenWindows</key>
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>2</integer>
@@ -2217,6 +2229,8 @@
 	<false/>
 	<key>PassOnControlClick</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>2</integer>
 	<key>PerPaneBackgroundImage</key>
 	<true/>
 	<key>PointerActions</key>
@@ -2258,6 +2272,8 @@
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
+	<key>ShouldSetLCTerminal</key>
+	<false/>
 	<key>ShowFullScreenTabBar</key>
 	<true/>
 	<key>ShowNewOutputIndicator</key>
@@ -2266,7 +2282,24 @@
 	<true/>
 	<key>SmartPlacement</key>
 	<false/>
+	<key>Snippets</key>
+	<array>
+		<dict>
+			<key>guid</key>
+			<string>2959B977-01F3-4C21-B414-B4CCF825B847</string>
+			<key>title</key>
+			<string>ers)</string>
+			<key>value</key>
+			<string>ers)</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
 	<key>SoundForEsc</key>
+	<false/>
+	<key>SshSchemePath</key>
+	<string></string>
+	<key>SshURLsSupportPath</key>
 	<false/>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
@@ -2279,11 +2312,11 @@
 	<key>TabsHaveCloseButton</key>
 	<true/>
 	<key>TmuxUsesDedicatedProfile</key>
+	<true/>
+	<key>TolerateUnrecognizedTmuxCommands</key>
 	<false/>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Profiles</string>
-		<string>Command History</string>
 		<string>Captured Output</string>
 	</array>
 	<key>UseBorder</key>

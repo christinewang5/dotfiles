@@ -1,4 +1,3 @@
-source $LOCAL_ADMIN_SCRIPTS/master.vimrc
 set nocompatible          " get rid of Vi compatibility mode.
 set number                " show line numbers
 set t_Co=256              " enable 256-color mode.

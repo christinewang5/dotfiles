@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias mydevconnect="et -c 'tmux -CC a' -x devbig057.nha1.facebook.com:8080"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -125,8 +126,6 @@ setopt COMPLETE_IN_WORD
 
 # Set up personal aliases, functions, etc.
 export no_proxy=".fbcdn.net,.facebook.com,.thefacebook.com,.tfbnw.net,.fb.com,.fburl.com,.facebook.net,.sb.fbsbx.com,localhost"
-export http_proxy="http://fwdproxy:8080"
-export https_proxy="http://fwdproxy:8080"
 export VSCODE_IPC_HOOK_CLI=$(ls -t $HOME/.vscode-sockets/vscode-ipc-*-*-*-*-*.sock|head -1)
 export FB_VSC_BIN_FOLDER=/usr/local/fbpkg/vscodefb/vscode-server/LAST/bin
 
@@ -138,14 +137,15 @@ export VISUAL=vim
 export EDITOR=vim
 
 # TMUX options
-export TERM=screen-256color 
-TMUX_OPTIONS="-CC"
-if [[ ! $TMUX && -t 0 && $TERM_PROGRAM != vscode ]]; then
-    first_unattached=$(tmux list-sessions -F '#{?session_attached,,#{session_name}}' 2>/dev/null | grep -v '^$' | head -1)
-      if [[ $first_unattached ]]; then
-            tmux $TMUX_OPTIONS attach-session -t $first_unattached
-              else
-                    tmux $TMUX_OPTIONS new-session
-                      fi
-fi
+# export TERM=screen-256color 
+# TMUX_OPTIONS="-CC"
+# if [[ ! $TMUX && -t 0 && $TERM_PROGRAM != vscode ]]; then
+#     first_unattached=$(tmux list-sessions -F '#{?session_attached,,#{session_name}}' 2>/dev/null | grep -v '^$' | head -1)
+#       if [[ $first_unattached ]]; then
+#             tmux $TMUX_OPTIONS attach-session -t $first_unattached
+#               else
+#                     tmux $TMUX_OPTIONS new-session
+#                       fi
+# fi
 
+export PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
