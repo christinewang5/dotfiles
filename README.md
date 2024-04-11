@@ -4,5 +4,5 @@
 - Check "Load preferences from a custom folder or URL" 
 - Set folder to `/Users/christinewang/dotfiles/System/iTerm2`
 
-## vimrc / zshrc 
-- `./makesymlinks.sh` to create dotfiles from home directory 
+## all other dotfiles
+- `./makesymlinks.sh` to create links between the files in this directory to the actual dotfiles used in the home directory 
